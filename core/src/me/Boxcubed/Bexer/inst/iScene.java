@@ -8,8 +8,10 @@ public class iScene extends Instantiator {
 	public GameObject newObject(JsonValue gobj){
 		String name = gobj.name;
 
+		if (gobj.get("class").asString().equals("Camera"))
+			return new me.Boxcubed.Bexer.objects.Camera();
 		if (gobj.get("class").asString().equals("Sacky"))
-			return new me.Boxcubed.Bexer.Sacky();
+			return new me.Boxcubed.Bexer.objects.Sacky();
 
 		return super.newObject(gobj);
 	}

@@ -2,6 +2,7 @@ package me.Boxcubed.Bexer.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+
 import me.Boxcubed.Bexer.BdxApp;
 
 public class DesktopLauncher {
